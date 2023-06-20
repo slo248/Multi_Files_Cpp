@@ -12,7 +12,7 @@ SOURCES 	:= $(wildcard $(SRC)/*.cpp)
 OBJECTS 	:= $(addprefix $(OBJ)/,$(notdir $(SOURCES:.cpp=.o)))
 EXECUTABLE 	:= $(BIN)/program
 
-all: clean run
+all: run
 
 run: $(EXECUTABLE)
 	@echo "Running..."
